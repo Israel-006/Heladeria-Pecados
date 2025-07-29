@@ -1,0 +1,37 @@
+/* --- MEJORA: Añadido para un desplazamiento suave --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Usamos la fuente Inter como fuente principal para un look limpio */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Fuente decorativa para el banner de bienvenida */
+.font-pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Color personalizado para el fondo de la barra de navegación */
+.bg-heladeria-salmon {
+    background-color: #F87171;
+    /* Tailwind's red-400 */
+}
+
+/* Contenedor principal para asegurar que el footer se mantenga abajo */
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex-grow: 1;
+}
+
+/* SOLUCIÓN PARA ALTURA EN MÓVILES */
+.full-screen-section {
+    min-height: 100vh; /* Fallback */
+    min-height: calc(var(--vh, 1vh) * 100);
+}
